@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in trial version of GeNIe, which can be used for evaluation purposes only -->
+<smile version="1.0" id="supermarket_sales___Sheet1__2_" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="City">
+			<state id="Mandalay" />
+			<state id="Naypyitaw" />
+			<state id="Yangon" />
+			<probabilities>0.332001332001332 0.328005328005328 0.33999333999334</probabilities>
+		</cpt>
+		<cpt id="Branch">
+			<state id="A" />
+			<state id="B" />
+			<state id="C" />
+			<parents>City</parents>
+			<probabilities>0.001001001001001001 0.997997997997998 0.001001001001001001 0.001013171225937183 0.001013171225937183 0.9979736575481256 0.9980449657869014 0.0009775171065493646 0.0009775171065493646</probabilities>
+		</cpt>
+		<cpt id="Customer_type">
+			<state id="Member" />
+			<state id="Normal" />
+			<probabilities>0.500999000999001 0.499000999000999</probabilities>
+		</cpt>
+		<cpt id="Product_line">
+			<state id="SElectronic_accessories" />
+			<state id="SFashion_accessories" />
+			<state id="SFood_and_beverages" />
+			<state id="SHealth_and_beauty" />
+			<state id="SHome_and_lifestyle" />
+			<state id="SSports_and_travel" />
+			<probabilities>0.16999666999667 0.177988677988678 0.173992673992674 0.152014652014652 0.16000666000666 0.166000666000666</probabilities>
+		</cpt>
+		<cpt id="Gender">
+			<state id="Female" />
+			<state id="Male" />
+			<parents>Product_line</parents>
+			<probabilities>0.4941520467836257 0.5058479532163742 0.5391061452513967 0.4608938547486034 0.5171428571428571 0.4828571428571429 0.4215686274509804 0.5784313725490197 0.4937888198757764 0.5062111801242236 0.5299401197604791 0.470059880239521</probabilities>
+		</cpt>
+		<cpt id="Total_interval">
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<probabilities>0.1092241092241092 0.6356976356976356 0.255078255078255</probabilities>
+		</cpt>
+		<cpt id="Quantity_interval">
+			<state id="State1" />
+			<state id="State2" />
+			<parents>Total_interval</parents>
+			<probabilities>0.9954545454545454 0.004545454545454545 0.2770800627943485 0.7229199372056515 0.826171875 0.173828125</probabilities>
+		</cpt>
+		<cpt id="Rating_interval" target="true">
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Branch Customer_type Gender Quantity_interval</parents>
+			<probabilities>0.175609756097561 0.273170731707317 0.151219512195122 0.224390243902439 0.175609756097561 0.2 0.273170731707317 0.1268292682926829 0.224390243902439 0.175609756097561 0.2382978723404255 0.1957446808510638 0.1531914893617021 0.174468085106383 0.2382978723404255 0.2428571428571428 0.1238095238095238 0.1714285714285714 0.2666666666666666 0.1952380952380952 0.1485714285714286 0.2342857142857143 0.2057142857142857 0.2628571428571428 0.1485714285714286 0.1916666666666667 0.2125 0.1291666666666667 0.2125 0.2541666666666667 0.2666666666666666 0.1 0.1476190476190476 0.3142857142857142 0.1714285714285714 0.2346153846153846 0.1384615384615385 0.35 0.1192307692307692 0.1576923076923077 0.2266666666666667 0.2266666666666667 0.2488888888888889 0.09333333333333334 0.2044444444444444 0.1952380952380952 0.2904761904761904 0.1 0.219047619047619 0.1952380952380952 0.1268292682926829 0.224390243902439 0.273170731707317 0.175609756097561 0.2 0.151219512195122 0.151219512195122 0.3219512195121951 0.248780487804878 0.1268292682926829 0.18 0.255 0.155 0.205 0.205 0.158974358974359 0.2615384615384615 0.08205128205128205 0.2358974358974359 0.2615384615384615 0.1238095238095238 0.1952380952380952 0.2904761904761904 0.1952380952380952 0.1952380952380952 0.164 0.224 0.08400000000000001 0.284 0.244 0.1703703703703703 0.2814814814814814 0.07777777777777778 0.2444444444444444 0.2259259259259259 0.1636363636363636 0.09545454545454546 0.1409090909090909 0.2545454545454545 0.3454545454545455 0.1615384615384615 0.1615384615384615 0.2384615384615385 0.1615384615384615 0.2769230769230769 0.2489795918367347 0.2081632653061224 0.2489795918367347 0.1673469387755102 0.1265306122448979 0.2588235294117647 0.1411764705882353 0.2980392156862745 0.1215686274509804 0.1803921568627451 0.2484848484848485 0.06666666666666668 0.2484848484848485 0.1878787878787879 0.2484848484848485 0.2090909090909091 0.1181818181818182 0.3 0.1636363636363636 0.2090909090909091 0.1771428571428571 0.2057142857142857 0.1771428571428571 0.2914285714285714 0.1485714285714286</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.4.4601.2 EVALUATION" name="supermarket_sales - Sheet1 (2)" faultnameformat="nodestate">
+			<node id="Gender">
+				<name>Gender</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>244 251 316 299</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Branch">
+				<name>Branch</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>38 252 110 300</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="City">
+				<name>City</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>38 49 110 97</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Customer_type">
+				<name>Customer type</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>244 49 316 97</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Product_line">
+				<name>Product line</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>450 55 522 91</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Quantity_interval">
+				<name>Quantity_interval</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>450 252 522 300</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Rating_interval">
+				<name>Rating_interval</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>38 455 110 503</position>
+				<barchart width="128" height="108" />
+			</node>
+			<node id="Total_interval">
+				<name>Total_interval</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>663 47 721 99</position>
+				<barchart width="128" height="72" />
+			</node>
+			<textbox>
+				<caption>Input file: supermarket_sales - Sheet1 (2)\nData rows: 1000\nElapsed time: 0.515s\n\nLearning algorithm: Bayesian Search\nAlgorithm parameters:\nIterations: 20\nMax parent count: 8\nSample size: 50\nLink probability: 0.1\nPrior link probability: 0.001\nSeed: 0\nMax search time: 0\n  class variable: Rating_interval\nNo background knowledge\n\nBest score in iteration 3: 209\nEM Log Likelihood: -7257.01</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>645 360 844 612</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>
